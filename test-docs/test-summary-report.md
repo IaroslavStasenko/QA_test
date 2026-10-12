@@ -1,47 +1,29 @@
-# DemoShop Test Summary Report
+# Test Summary Report
 
-## Execution Summary
 
 | Metric | Result |
 |---|---:|
-| Total test cases | 16 |
-| Passed | 13 |
-| Failed | 3 |
+| Total test cases | 12 |
+| Passed | 10 |
+| Failed | 2 |
 | Blocked | 0 |
-| Pass rate | 81.25% |
-| Open defects | 3 |
+| Open defects | 2 |
 
-## Defect Summary
+## Описание дефектов
 
 | Defect | Severity | Priority | Related test | Status |
 |---|---|---|---|---|
-| BUG-001 — Invalid login email accepted | Medium | Medium | TC-003 | Open |
-| BUG-002 — Cart total not updated after quantity change | High | High | TC-008 | Open |
-| BUG-003 — Duplicate order on double click | Critical | High | TC-015 | Open |
+| BUG-001 — Ошибка добавления больлшого количества учеников | Medium | Medium | TC-008 | Open |
+| BUG-002 — Ошибка добавления слотов для оценок | High | High | TC-010 | Open |
 
-## Assessment
 
-The basic login, catalogue and most cart/checkout flows behave as expected in the fictional test scenario. However, the current build should **not be considered ready for a production-style release** because BUG-003 affects transaction integrity and BUG-002 can display an incorrect cart total.
+## Оценка
 
-BUG-001 should also be corrected, but it is less urgent than the transaction-related defects.
+В тестовом сценарии вход в систему, выставление, просмотр оценок и большинство других процессов работы ведомости работают должным образом. Однако текущую сборку не следует считать готовой, поскольку ошибка BUG-001 влияет на целостность отображения ведомости, а ошибка BUG-002 может затруднять работу на поздних этапах обучения.
 
-## Recommended Next Steps
+## Рекомендуемые дальнейшие шаги
 
-1. Fix duplicate-order handling and verify backend idempotency.
-2. Fix cart recalculation after quantity changes.
-3. Correct email validation and retest both client- and server-side behaviour.
-4. Run focused regression tests around cart and checkout.
-5. Re-execute failed test cases and update defect status.
+1. Исправить ошибки BUG-001 и BUG-002.
+2. Проведите целенаправленные регрессионные тесты, касающиеся записи оценок и авторизации в системе.
+3. Повторно выполнить неудачно завершившиеся тестовые случаи и обновить статус дефекта.
 
-## Regression Focus
-
-After fixes, regression should cover:
-
-- Add/remove cart operations
-- Quantity boundaries
-- Cart and checkout total consistency
-- Single and repeated order submission
-- Checkout validation
-- Order confirmation and reference generation
-
-> All results are part of a synthetic QA portfolio exercise based on fictional requirements.
