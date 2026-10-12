@@ -5,7 +5,6 @@
 **Модуль:** Электронная ведомость оценок  
 **Severity:** Critical  
 **Priority:** High  
-**Тип дефекта:** Functional / UI  
 **Статус:** New  
 **Окружение:** Windows 10 19045.6456, Chrome 154.0.8037.98
 
