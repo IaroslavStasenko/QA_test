@@ -17,10 +17,10 @@
 
 ## Результаты выполнения
 
-| ID | Фактический результат | Статус |
+| ID | result | Status|
 |---|---|---|
-| TC-001 |      Passed | Completed |
-| TC-002 |      Passed | Completed |
+| TC-001 | Passed | Completed |
+| TC-002 | Passed | Completed |
 | TC-003 | Passed | Completed |
 | TC-004 | Passed | Completed |
 | TC-005 | Passed | Completed |
