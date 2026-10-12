@@ -18,7 +18,7 @@
 ## Результаты выполнения
 
 | ID | Фактический результат | Статус |
-|---|---|---|---|
+|---|---|---|
 | TC-001 | Passed | Completed |
 | TC-002 | Passed | Completed |
 | TC-003 | Passed | Completed |
